@@ -1,0 +1,6 @@
+mixin bread (last, ...items)
+	ul.breadcrumbs
+		each item in items
+			li: a(href='#')= item
+
+		li= last

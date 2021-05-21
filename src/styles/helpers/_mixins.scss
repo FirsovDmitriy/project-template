@@ -1,0 +1,36 @@
+@mixin screenS {
+  @media only screen and (max-width: $mobileWidth) {
+    @content;
+  }
+}
+
+@mixin screenM {
+  @media only screen and (max-width: $portraitTabletWidth) {
+    @content;
+  }
+}
+
+@mixin screenL {
+  @media only screen and (max-width: $landscapeTabletWidth) {
+    @content;
+  }
+}
+
+@mixin screenXL {
+  @media only screen and (max-width: $desktopWidth) {
+    @content;
+  }
+}
+
+@mixin screenXXL {
+  @media only screen and (max-width: $wideDesktopWidth) {
+    @content;
+  }
+}
+
+@mixin futura-pt {
+  font: {
+    family: 'Futura PT';
+    weight: $fw-book;
+  }
+}

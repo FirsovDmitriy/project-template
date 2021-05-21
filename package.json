@@ -1,0 +1,90 @@
+{
+  "name": "name",
+  "description": "",
+  "author": "Karairit",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run gulp",
+    "build": "gulp prod --production",
+    "build:views": "gulp views --production",
+    "build:styles": "gulp styles --production",
+    "build:scripts": "gulp scripts --production",
+    "build:images": "gulp images --production",
+    "build:webp": "gulp webp --production",
+    "build:sprites": "gulp sprites --production",
+    "build:fonts": "gulp fonts --production",
+    "build:favicons": "gulp favicons --production",
+    "build:gzip": "gulp gzip --production",
+    "lint:styles": "stylelint \"src/**/*.scss\" --syntax=scss",
+    "lint:styles --fix": "stylelint \"src/**/*.scss\" --syntax=scss --fix",
+    "lint:scripts": "eslint --color ./src/blocks",
+    "lint:scripts --fix": "eslint --fix --color ./src/blocks"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/register": "^7.13.16",
+    "@fancyapps/fancybox": "^3.5.7",
+    "autoprefixer": "^10.2.4",
+    "babel-eslint": "~10.0.2",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.12",
+    "cross-env": "^7.0.3",
+    "css-loader": "^3.6.0",
+    "del": "^4.1.1",
+    "eslint": "~6.0.0",
+    "expose-loader": "^1.0.1",
+    "file-loader": "^6.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-favicons": "latest",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "~6.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "~4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "latest",
+    "gulp-touch-cmd": "0.0.1",
+    "gulp-watch": "latest",
+    "gulp-webp": "^4.0.1",
+    "lint-staged": "^10.0.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "require-dir": "^1.2.0",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "~4.35.0",
+    "webpack-node-externals": "^2.5.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "clipboardy": "^2.3.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-pug-3": "^1.2.2",
+    "gulp-typograf": "^4.0.3",
+    "gutil": "^1.6.4",
+    "in-view": "^0.6.1",
+    "jquery": "latest",
+    "jquery-bridget": "^3.0.0",
+    "masonry-layout": "^4.2.2",
+    "select2": "^4.1.0-rc.0",
+    "swiper": "^6.5.9",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "!(_*).scss": [
+      "stylelint --fix --color --config ./.stylelintrc"
+    ]
+  }
+}

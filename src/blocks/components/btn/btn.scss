@@ -1,0 +1,35 @@
+.btn {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    min-width: 276px;
+    min-height: 64px;
+
+    overflow: hidden;
+    border: 0;
+    padding: 26px 12px 24px;
+	
+    transition: .3s;
+
+    color: #fff;
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+        
+
+    }
+    &[disabled] {
+
+    }
+}
+

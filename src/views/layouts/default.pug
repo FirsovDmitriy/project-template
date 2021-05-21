@@ -1,0 +1,69 @@
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		title #{title}
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		
+		meta(name='mobile-web-app-capable' content='yes')
+		meta(name='theme-color' content='#fff')
+		meta(name='application-name' content='Media')
+		meta(name="description" content="")
+		<meta property="og:image" content="tpl/img/og-image.jpg">
+		<meta property="og:image:type" content="image/jpg">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content=""> 
+		<meta property="og:title" content=""/>
+		<meta property="og:description" content=""/>
+
+		// favicon
+		
+		link(href="tpl/assets/favicon/favicon.svg" rel="icon" type="image/svg+xml")
+		link(rel='shortcut icon' href='tpl/favicons/favicon.ico')
+		link(rel='icon' type='image/png' sizes='16x16' href='tpl/favicons/favicon-16x16.png')
+		link(rel='icon' type='image/png' sizes='32x32' href='tpl/favicons/favicon-32x32.png')
+		link(rel='icon' type='image/png' sizes='48x48' href='tpl/favicons/favicon-48x48.png')
+		link(rel='apple-touch-icon' sizes='57x57' href='tpl/favicons/apple-touch-icon-57x57.png')
+		link(rel='apple-touch-icon' sizes='60x60' href='tpl/favicons/apple-touch-icon-60x60.png')
+		link(rel='apple-touch-icon' sizes='72x72' href='tpl/favicons/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon' sizes='76x76' href='tpl/favicons/apple-touch-icon-76x76.png')
+		link(rel='apple-touch-icon' sizes='114x114' href='tpl/favicons/apple-touch-icon-114x114.png')
+		link(rel='apple-touch-icon' sizes='120x120' href='tpl/favicons/apple-touch-icon-120x120.png')
+		link(rel='apple-touch-icon' sizes='144x144' href='tpl/favicons/apple-touch-icon-144x144.png')
+		link(rel='apple-touch-icon' sizes='152x152' href='tpl/favicons/apple-touch-icon-152x152.png')
+		link(rel='apple-touch-icon' sizes='167x167' href='tpl/favicons/apple-touch-icon-167x167.png')
+		link(rel='apple-touch-icon' sizes='180x180' href='tpl/favicons/apple-touch-icon-180x180.png')
+		link(rel='icon' type='image/png' sizes='228x228' href='tpl/favicons/coast-228x228.png')
+		link(rel='apple-touch-icon' sizes='1024x1024' href='tpl/favicons/apple-touch-icon-1024x1024.png')
+
+		meta(name='apple-mobile-web-app-capable' content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+		meta(name='apple-mobile-web-app-title' content='Media')
+		meta(name='msapplication-TileColor' content='#fff')
+		meta(name='msapplication-TileImage' content='tpl/favicons/mstile-144x144.png')
+		meta(name='msapplication-config' content='tpl/favicons/browserconfig.xml')
+
+		link(rel='manifest' href='tpl/favicons/manifest.json')
+		link(rel='yandex-tableau-widget' href='tpl/favicons/yandex-browser-manifest.json')
+
+		// preload
+		link( href="tpl/fonts/Manrope.ttf" as='font' crossorigin="anonymous" rel='preload')
+
+		// styles
+		link(rel="stylesheet" href="tpl/css/vendor.css?v1")
+		link(rel="stylesheet" href="tpl/css/main.css?v1")
+	
+	body
+		include ../../blocks/modules/header/header
+		.page-content
+			block content
+		include ../../blocks/modules/footer/footer
+		
+		block scripts
+	
+		

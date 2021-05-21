@@ -1,0 +1,16 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "title"
+
+block content
+	section
+		.container
+			ul(style="display: flex;flex-direction: column;justify-content: flex-start;padding: 120px 0;")
+				li(style="padding: 10px 0;"): a(href="index-main.html") Главная
+
+
+block scripts
+	script(src="assets/js/main.js")
+	script(src="assets/js/vendor.js")
