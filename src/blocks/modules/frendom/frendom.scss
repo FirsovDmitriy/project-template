@@ -1,0 +1,45 @@
+.frendom {
+    background: $white-color-10;
+    margin-bottom: 200px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0;
+    }
+    &__info {
+        margin-bottom: 40px;
+    }
+    &__text {
+        width: 52%;
+    }
+    @include screen-xxl() {
+        &__content {
+            padding: 70px 0;
+        }
+    }
+    @include screen-xl() {
+        &__content {
+            padding: 40px 0 60px 0;
+        }
+    }
+    @include screen-m() {
+        margin-bottom: 60px;
+        padding: 0 1rem;
+        background: none;
+        .container {
+            background: $white-color-10;
+        }
+        &__content {
+            padding: 20px 0 24px 0;
+        }
+    }
+    @include screen-s() {
+        &__info {
+            padding: 0 20px;
+        }
+        &__text {
+            width: 88%;
+        }
+    }
+}

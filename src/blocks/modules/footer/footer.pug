@@ -1,3 +1,15 @@
 include ../../components/ico/ico
-footer
+include ../../components/btn/btn
+footer.footer
 	.container
+		.footer__top 
+			h2.footer__title Хотите с нами 
+				span.footer__title-color работать?
+		.footer__body 
+			.footer__row 
+				p.footer__text mail@nopreset.ru
+				+btn('Расскажите о проекте', 'footer__btn')
+			.footer__row 
+				.footer__phone 
+					p.footer__text Саратов, ул. Гоголя, д. 64
+					a.footer__phone-link(href="tel:+78452902727") +7 (8452) 90-27-27 

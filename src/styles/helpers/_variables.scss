@@ -13,39 +13,28 @@ $fs-second-font-sm: 40px;
 $fs-second-font-xs: 32px;
 
 
-
 $fw-book: 400;
 $fw-demi: 600;
 
 
 
-
-
-$a: inherit;
-
 $black-color: #000;
 $white-color: #FFF;
 
+$white-color-10: #F7F7F7;
+
 $blue-color: #265FF5;
-$main: #235FF7;
+$gray-color: #a4afc1;
 
 
-$primaryFont:         'montserrat', sans-serif;
-$secondFont:          'montserrat', sans-serif;
+$screen-xs: 0;
 
-
-$xs: 0;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1440p;
+$breakpoint-s:    576px;
+$breakpoint-m:    768px;
+$breakpoint-l:    992px;
+$breakpoint-xl:   1200px;
+$breakpoint-xxl:  1440px;
 
 
 
-// $screenXS:               0;
-// $screenS:                576px;
-// $screenM:                767px;
-// $screenL:                1024px;
-// $screenXL:               1280px;
-// $screenXXL:              1440px;
+$transition: 0.3s;

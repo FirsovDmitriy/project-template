@@ -1,29 +1,29 @@
-@mixin screenS {
-  @media only screen and (max-width: $mobileWidth) {
+@mixin screen-s {
+  @media only screen and (max-width: $breakpoint-s) {
     @content;
   }
 }
 
-@mixin screenM {
-  @media only screen and (max-width: $portraitTabletWidth) {
+@mixin screen-m {
+  @media only screen and (max-width: $breakpoint-m) {
     @content;
   }
 }
 
-@mixin screenL {
-  @media only screen and (max-width: $landscapeTabletWidth) {
+@mixin screen-l {
+  @media only screen and (max-width: $breakpoint-l) {
     @content;
   }
 }
 
-@mixin screenXL {
-  @media only screen and (max-width: $desktopWidth) {
+@mixin screen-xl {
+  @media only screen and (max-width: $breakpoint-xl) {
     @content;
   }
 }
 
-@mixin screenXXL {
-  @media only screen and (max-width: $wideDesktopWidth) {
+@mixin screen-xxl {
+  @media only screen and (max-width: $breakpoint-xxl) {
     @content;
   }
 }

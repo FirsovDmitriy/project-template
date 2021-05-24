@@ -1,5 +1,22 @@
-include ../../components/ico/ico
+include ../../components/btn/btn
 
 header.header
 	.container
-		.block Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error aliquam asperiores, aperiam sunt aspernatur nobis sint quidem, tempore voluptas eligendi impedit praesentium repellat porro ipsum, neque quod ipsa! Dicta, deleniti!
+		.header__row
+			.header__logo 
+				a.header__logo-link
+					picture 
+						source(media="(min-width: 768px)", srcset="tpl/assets/svg/logo.svg")
+						source(media="(max-width: 767px)", srcset="tpl/assets/svg/mobile-logo.svg")
+						img.header__logo-icon(src="tpl/assets/svg/logo.svg", alt="nopreset")
+			nav.header__nav.nav-header
+				ul.nav-header__list
+					li.nav-header__item 
+						a.nav-header__link(href="#") Кейсы 
+					li.nav-header__item 
+						a.nav-header__link(href="#") Услуги
+					li.nav-header__item 
+						a.nav-header__link(href="#") О нас
+					li.nav-header__item 
+						a.nav-header__link(href="#") Контакты 
+			+btn('Заказать', 'header__btn header__btn--small')
